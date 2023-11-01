@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="section">
+        <div class="row">
+            <div class="col options">
+                <div class="first box">
+                    <input type="number" id="font-size" min="10" max="50" onchange="funSize(this)" value="18">
+                </div>
+                <div class="second box">
+                    <button type="button" onclick="funBold(this)">
+                        <img src="./src/42240_bold_font_icon.png">
+                    </button>
+                    <button type="button" onclick="funItalic(this)">
+                        <img src="./src/42241_font_italic_icon.png">
+                    </button>
+                    <button type="button" onclick="funUnderline(this)">
+                        <img src="./src/42244_font_italic_underline_icon.png">
+                    </button>
+                </div>
+                <div class="third box">
+                    <button type="button" onclick="funLeftAlign(this)">
+                        <img src="./src/left-alignment.png">
+                    </button>
+                    <button type="button" onclick="funCenterAlign(this)">
+                        <img src="./src/center-alignment.png">
+                    </button>
+                    <button type="button" onclick="funRightAlign(this)">
+                        <img src="./src/right-alignment.png">
+                    </button>
+                </div>
+                <div class="fourth box">
+                    <button type="button" onclick="funCapitalize(this)">
+                        <img src="./src/letter-a.png">
+                    </button>
+                    <button type="button" onclick="funClear(this)">
+                        <img src="./src/strikethrough.png">
+                    </button>
+                    <input type="color" onchange="funColor(this)">
+                </div>
+            </div>
+            <div class="col">
+                <textarea id="textarea"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

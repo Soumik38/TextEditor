@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: orange;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    height: 500px;
+    width: 1000px;
+    border-radius: 10px;
+}
+.col{
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.options{
+    width: 600px;
+}
+
+.box{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.second{
+    border-right: 2px solid brown;
+    border-left: 2px solid brown;
+}
+.third{
+    border-right: 2px solid brown;
+}
+
+input[type=number]{
+    outline: none;
+    border: none;
+    font-size: 24px;
+    padding: 10px 0px;
+    margin-left: 10px;
+    width: 40px;
+}
+
+input[type=color]{
+    width: 30px;
+    background-color: none;
+}
+
+
+/* buttons */
+button{
+    border: none;
+    background-color: transparent;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(255, 255, 179);
+    border-radius: 40px;
+}
+button.active{
+    background-color: rgb(255, 255, 179);
+    border-radius: 40px;
+}
+.third button:hover{
+    background-color: rgb(160, 160, 255);
+}
+.third button.active{
+    background-color: rgb(160, 160, 255);
+}
+.fourth button:hover{
+    background-color: rgb(243, 123, 123);
+}
+.fourth button.active{
+    background-color: rgb(243, 123, 123);
+}
+
+
+/* writing area */
+textarea{
+    width: 100%;
+    height: 60vh;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: vertical;
+}
